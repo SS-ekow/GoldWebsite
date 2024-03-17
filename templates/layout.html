@@ -77,11 +77,15 @@
             <div class="banner-text">
                 
             </div>
+            {% block bannerContent %}
+            {% endblock %}
             
 
         </section>
     </header>
     <main>
+        {% block content %}
+        {% endblock %}
 
         
     </main>

@@ -101,10 +101,8 @@ body{
 }
 /* change this */
 main{
-    height: 100vh;
     width: 100%;
-    background-color: #f4f4f4;
-    margin-top: 500px;
+    
 }
 .banner-text{
     margin-top: 70px;
@@ -157,6 +155,114 @@ footer img{
     
 
     
+}
+
+.prices-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 130px;
+    margin-left: 20px;
+}
+
+.prices-row .pill{
+    background-color: #c4c74e;
+    width: 90px;
+    height: 35px;
+    border-radius: 70px;
+    text-align: center;
+}
+.x{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    
+}
+
+.pill.black{
+    background-color: black;
+    color: white;
+}
+.divider-h{
+    width: 97%;
+    margin: 5px auto;
+}
+
+
+.display{
+    width: 90%;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 40px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.home-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.ribbon{
+    width: 100%;
+    height: 60vh;
+    background-color: blue ;
+    margin-top: 40px;
+}
+
+.statement{
+    width: 100%;
+    height: 40vh;
+    background: #c4c74e;
+    position: relative;
+    top: 7%;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.shape{
+    grid-column: 1/2;
+    width: 75%;
+    height: 90%;
+    background-color: #64651d;
+    /* box-shadow: ; */
+    margin-left: 10%;
+    border-bottom-left-radius: 70%;
+}
+
+.secure{
+    width: 50%;
+    height: 8vh;
+    background: linear-gradient(to right, #c4c74e, #64651d, #242419);
+    border-radius: 70px; 
+    border: 1px solid goldenrod;
+    transition: 1s;
+    color: white;
+    font-size: larger;
+}
+
+.secure:hover{
+    background: linear-gradient( to left, #c4c74e, #64651d, #242419);
+    transform: scale(1.15);
+}
+
+.why{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutUs{
+    width: 100%;
+    height: 50vh;
+    background: #c4c74e;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
 }
 
 
