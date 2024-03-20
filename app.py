@@ -6,5 +6,14 @@ app = Flask(__name__)
 def hello():
     return render_template('home.html')
 
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
