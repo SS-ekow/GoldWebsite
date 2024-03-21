@@ -33,11 +33,53 @@
 {% endblock bannerContent %}
 
 {% block content %}
-    <h1>Shop</h1>
-    <p>Welcome to our shop. We have the following items for sale:</p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+    <div class="shop-display">
+        <div class="shop-sidebar">
+
+        </div>
+        <div class="shop-cards-column">
+            <h3>Gold</h3>
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="content">
+                    <h3>Name</h3>
+                    <p><span>Weight</span> <span>Price</span></p>
+                    <a href="#"><button>Add to cart</button></a>
+                </div>
+            </div>
+
+            <h3>Silver</h3>
+            <div class="card">
+                <div class="card-image"></div>  
+                <div class="content">
+                    <h3>Name</h3>
+                    <p><span>Weight</span> <span>Price</span></p>
+                    <a href="#"><button>Add to cart</button></a>
+                </div>
+            </div>
+
+            <h3>Platinum</h3>
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="content">
+                    <h3>Name</h3>
+                    <p><span>Weight</span> <span>Price</span></p>
+                    <a href="#"><button>Add to cart</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="shop-page-content">
+
+    </div>
+
+    <div class="disclaimer">
+        <p>
+            Web Price Only
+Online pricing is quoted in Real-time. Your price is set at moment purchase is finalized. Dates of coins cannot be chosen. Dates are determined by available stock, at the discretion of company staff. Qualifying purchase required for all transactions completed in the web store using online or TV promotions.
+        </p>
+
+    </div>
 {% endblock %}

@@ -6,17 +6,19 @@
 }
 
 :root{
-    --color1: #1e1e1e;
-    --color2: #242419;
-    --color3: ;
+    --black1: #1e1e1e;
+    --gold-black: #242419;
     --gold: #c4c74e;
     --gold2: #64651d;
+    --banner-blue: rgba(22, 10, 101, 0.83);
+    --blue2: rgba(0, 0, 255, 0.5);
+
 
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 }
 .number{
     display: block;
@@ -29,7 +31,7 @@ body{
     align-items: center;
     padding: 20px 0;
     height: 8vh;
-    background-color: var(--color1);
+    background: var(--black1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
     font-family: Poppins, verdana;
@@ -43,7 +45,7 @@ body{
     justify-content: space-evenly;
     align-items: left;
     height: 10vh;
-    background-color: #242419;
+    background: #242419;
 }
 
 .nav-links{
@@ -65,7 +67,7 @@ body{
 }
 
 .logo-banner{
-    background-color: #FEF5F5;
+    background: #FEF5F5;
     height: 23vh;
     width: 100%;
     display: grid;
@@ -92,7 +94,7 @@ body{
 .banner{
     width: 100%;
     height: 70vh;
-    background: blue;
+    background: var(--banner-blue);
     position: absolute;
     top: 25%;
     z-index: -1;
@@ -113,7 +115,7 @@ footer{
     display: grid;
     grid-template-rows: 1fr 2fr;
     row-gap: 20px;
-    background-color: var(--color2);
+    background: var(--gold-black);
     height: 70vh;
     z-index: -1;
     position: relative;
@@ -165,7 +167,7 @@ footer img{
 }
 
 .prices-row .pill{
-    background-color: #c4c74e;
+    background: #c4c74e;
     width: 90px;
     height: 35px;
     border-radius: 70px;
@@ -179,7 +181,7 @@ footer img{
 }
 
 .pill.black{
-    background-color: black;
+    background: black;
     color: white;
 }
 .divider-h{
@@ -210,15 +212,19 @@ footer img{
 
 .ribbon{
     width: 100%;
-    height: 60vh;
-    background-color: blue ;
+    height: 80vh;
+    background: var(--blue2) ;
     margin-top: 40px;
 }
 
 .statement{
     width: 100%;
-    height: 40vh;
-    background: #c4c74e;
+    height: 60vh;
+    background-image: url(/static/images/statement.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     position: relative;
     top: 7%;
     display:grid;
@@ -229,10 +235,10 @@ footer img{
     grid-column: 1/2;
     width: 75%;
     height: 90%;
-    background-color: #64651d;
-    /* box-shadow: ; */
+    background: #64651d;
+    box-shadow: -30px 20px 0px #011f44;
     margin-left: 10%;
-    border-bottom-left-radius: 70%;
+    border-bottom-left-radius: 60%;
 }
 
 .secure{
@@ -254,6 +260,7 @@ footer img{
 .why{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 10px 50px;
 }
 
 .aboutUs{
@@ -262,8 +269,85 @@ footer img{
     background: #c4c74e;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: 10px 50px;
 
 }
 
+.shop-display{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    margin-top: 70px;
+    background: black;
+    color: white;
+    width: 80vw;
+    margin-left: 10vw;
+    padding: 10px 10px
+}
+
+.shop-sidebar{
+    width: 130%;
+    height: 100%;
+    background: var(--blue2);
+    margin-left: -100px;
+    margin-top: 20px;
+
+
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+    color: black;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 20px;
+}
+
+.card-image{
+    width: 100%;
+    background: #c4c74e;
+    border-radius: 10px;
+    
+}
+
+.card-content{
+    width: 100%;
+
+}
+
+.card button{
+    width: 100px;
+    height: 40px;
+    background: #c4c74e;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    text-align: center;
+    
+}
+
+.shop-page-content{
+
+    width: 100%;
+    height: 100px;
+    background: aqua;
+    margin: 40px auto;
+
+}
+
+.disclaimer{
+    width: 80%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--banner-blue);
+    margin: 20px auto;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 16px;
+}
 
 
